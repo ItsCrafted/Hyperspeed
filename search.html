@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <iframe id="searcherFrame"></iframe>
+    
+    <div id="hintMessage" onclick="toggleBar()">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    
+    <div id="infoBar">
+        <div class="info-item back-button" title="Back to Home" onclick="window.location.href='index.html'">
+            <i class="info-icon fas fa-arrow-left"></i>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="info-item" title="Search Engine">
+            <i class="info-icon fas fa-compass"></i>
+            <span class="info-value" id="browserInfo">-</span>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="info-item" title="Proxy Backend">
+            <i class="info-icon fas fa-shield-halved"></i>
+            <span class="info-value" id="proxyInfo">-</span>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="info-item" title="Wisp Server">
+            <i class="info-icon fas fa-satellite-dish"></i>
+            <span class="info-value" id="wispInfo">-</span>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="info-item" title="Current Query">
+            <i class="info-icon fas fa-globe"></i>
+            <span class="info-value" id="urlInfo">-</span>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="info-item hide-button" title="Hide Bar" onclick="toggleBar()">
+            <i class="info-icon fas fa-eye-slash"></i>
+        </div>
+    </div>
+        <script src="js/search.js"></script>
+</body>
+</html>

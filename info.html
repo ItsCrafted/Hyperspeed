@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperspeed Information</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+    <div class="bg-container">
+        <div class="corner-accent corner-tl"></div>
+        <div class="corner-accent corner-br"></div>
+    </div>
+
+    <div class="content">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="info-section">
+            <h2>About Hyperspeed</h2>
+            <p>
+                Hyperspeed is a web proxy service that allows you to browse the internet securely and privately. 
+                It acts as an intermediary between you and the websites you visit, helping to bypass restrictions 
+                and maintain your privacy online.
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>Search Engines</h2>
+            <p>
+                Choose from multiple search engines to find what you're looking for:
+            </p>
+            <h3>DuckDuckGo</h3>
+            <h3>Google</h3>
+            <h3>Bing</h3>
+        </div>
+
+        <div class="info-section">
+            <h2>Proxy Backends</h2>
+            <p>
+                Hyperspeed supports multiple proxy backends to route your traffic:
+            </p>
+            <h3>Ultraviolet <span class="status-badge working">Working</span></h3>
+            <p>
+                A highly sophisticated proxy used for evading internet censorship. It's currently the recommended 
+                backend for optimal performance and compatibility.
+            </p>
+            <h3>Scramjet <span class="status-badge broken">Currently Broken</span></h3>
+            <p>
+                An alternative proxy backend that is currently experiencing technical issues. We're working to 
+                resolve these problems. Please use Ultraviolet for now.
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>WISP Server</h2>
+            <p>
+                WISP (WebSocket Internet Service Protocol) is used to establish secure connections through the proxy. 
+                The default server is <code>wss://wisp.mercurywork.shop/</code> and should work for most users.
+            </p>
+            <p>
+                You can customize this if you have your own WISP server or need to use a different endpoint.
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>How to Use</h2>
+            <ul>
+                <li>Enter a search term or direct URL in the search bar</li>
+                <li>Select your preferred search engine</li>
+                <li>Choose a proxy backend (Ultraviolet recommended)</li>
+                <li>Verify the WISP server is set correctly</li>
+                <li>Click "Launch" to start browsing</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Need Help? Have An Idea or complaint?</h2>
+            <p>
+                Join our Discord community for support, updates, and to connect with other users. Click the 
+                Discord icon at the bottom of the home page.
+            </p>
+        </div>
+    </div>
+
+    <script src="js/info.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searcher</title>
+    <link rel="stylesheet" href="css/searcher.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="loadingTitle">Grabbing that for you<span class="dots"></span></div>
+        <div id="loadingSubtext">Initializing proxy...</div>
+    </div>
+    <div id="error"></div>
+    <iframe id="bgFrame" src="bg.html"></iframe>
+    <iframe id="proxyFrame"></iframe>
+
+    <script src="/baremux/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/sj/scramjet.all.js"></script>
+    <script src="js/searcher.js"></script>
+</body>
+</html>
