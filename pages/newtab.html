@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>New Tab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet" href="../css/newtab.css"/>
+</head>
+<body>
+
+<div class="ambient">
+  <div class="blob p"></div>
+  <div class="blob c"></div>
+  <div class="blob p2"></div>
+</div>
+
+<div class="newtab">
+  <div class="nt-logo">
+    <div class="nt-emblem">
+      <img class="nt-emblem-img" src="../img/favicon.png" alt="Hyperspeed"/>
+    </div>
+    <div class="nt-wordmark"><span class="h">HYPER</span><span class="s">SPEED</span></div>
+    <div class="nt-sub">THE FASTEST PROXY EVER MADE</div>
+  </div>
+
+  <div class="nt-clock" id="nt-clock"></div>
+
+  <div class="nt-search-wrap">
+    <input class="nt-search" id="nt-search" placeholder="search or enter a url…" spellcheck="false" autocomplete="off"/>
+    <div class="nt-search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    <div class="nt-suggestions" id="nt-suggestions"></div>
+  </div>
+
+  <div class="nt-tiles">
+    <div class="nt-tile pk" onclick="nav('hyperspeed://games')">
+      <div class="tile-icon"><i class="fa-solid fa-gamepad"></i></div>
+      <div class="tile-name">games</div>
+      <div class="tile-desc">Play unblocked</div>
+    </div>
+    <div class="nt-tile cy" onclick="nav('hyperspeed://movies')">
+      <div class="tile-icon"><i class="fa-solid fa-film"></i></div>
+      <div class="tile-name">movies</div>
+      <div class="tile-desc">Stream free</div>
+    </div>
+    <div class="nt-tile pk" onclick="nav('hyperspeed://ai')">
+      <div class="tile-icon"><i class="fa-solid fa-robot"></i></div>
+      <div class="tile-name">ai</div>
+      <div class="tile-desc">Ask anything</div>
+    </div>
+    <div class="nt-tile cy" onclick="nav('hyperspeed://settings')">
+      <div class="tile-icon"><i class="fa-solid fa-gear"></i></div>
+      <div class="tile-name">settings</div>
+      <div class="tile-desc">Configure</div>
+    </div>
+  </div>
+
+  <div class="nt-divider"></div>
+
+  <div class="nt-sites">
+    <div class="nt-site" onclick="nav('https://wikipedia.org')">
+      <div class="nt-site-icon"><i class="fa-brands fa-wikipedia-w"></i></div>
+      <div class="nt-site-label">Wiki</div>
+    </div>
+    <div class="nt-site" onclick="nav('https://reddit.com')">
+      <div class="nt-site-icon"><i class="fa-brands fa-reddit"></i></div>
+      <div class="nt-site-label">Reddit</div>
+    </div>
+    <div class="nt-site" onclick="nav('https://x.com')">
+      <div class="nt-site-icon"><i class="fa-brands fa-x-twitter"></i></div>
+      <div class="nt-site-label">X</div>
+    </div>
+    <div class="nt-site" onclick="nav('https://github.com')">
+      <div class="nt-site-icon"><i class="fa-brands fa-github"></i></div>
+      <div class="nt-site-label">GitHub</div>
+    </div>
+    <div class="nt-site" onclick="nav('https://news.ycombinator.com')">
+      <div class="nt-site-icon"><i class="fa-solid fa-newspaper"></i></div>
+      <div class="nt-site-label">HN</div>
+    </div>
+    <div class="nt-site" onclick="nav('https://open.spotify.com')">
+      <div class="nt-site-icon"><i class="fa-brands fa-spotify"></i></div>
+      <div class="nt-site-label">Spotify</div>
+    </div>
+  </div>
+</div>
+<script src="../js/newtab.js"></script>
+</body>
+</html>

@@ -1,1 +1,0 @@
-# When Hyperspeed V2 comes out, the code wil be added to this repository.
